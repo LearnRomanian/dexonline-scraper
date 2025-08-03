@@ -16,7 +16,7 @@ const _selectors = {
 					contents: {
 						element: "div[class=meaning-row]",
 						tags: 'span[class="tag-group meaning-tags"]',
-						text: 'span[class="def html"]',
+						text: 'span[class="tree-def html"]',
 						sources: 'span[class="meaning-sources tag-group"]',
 					},
 					relations: {

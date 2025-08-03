@@ -210,8 +210,8 @@ describe("The parser", () => {
 				lemma: "da",
 				table: [
 					[
-						"verb (VT93) Surse flexiune: DOR",
-						"verb (VT93) Surse flexiune: DOR",
+						"verb (VT93) Surse flexiune: DOOM 3",
+						"verb (VT93) Surse flexiune: DOOM 3",
 						"infinitiv",
 						"infinitiv lung",
 						"participiu",
@@ -220,8 +220,8 @@ describe("The parser", () => {
 						"imperativ pers. a II-a",
 					],
 					[
-						"verb (VT93) Surse flexiune: DOR",
-						"verb (VT93) Surse flexiune: DOR",
+						"verb (VT93) Surse flexiune: DOOM 3",
+						"verb (VT93) Surse flexiune: DOOM 3",
 						"da",
 						"dare",
 						"dat",
@@ -230,8 +230,8 @@ describe("The parser", () => {
 						"plural",
 					],
 					[
-						"verb (VT93) Surse flexiune: DOR",
-						"verb (VT93) Surse flexiune: DOR",
+						"verb (VT93) Surse flexiune: DOOM 3",
+						"verb (VT93) Surse flexiune: DOOM 3",
 						"da",
 						"dare",
 						"dat",
@@ -346,7 +346,7 @@ describe("The parser", () => {
 				expect(resultsStringified).to.not.include("ț");
 				expect(resultsStringified).to.not.include("Ț");
 			});
-      
+
 			it("match diacritics", async () => {
 				const results = await Dexonline.get("ca", { flags: DictionaryFlags.MatchDiacritics });
 
@@ -354,7 +354,7 @@ describe("The parser", () => {
 
 				expect(results?.synthesis.map((entry) => entry.lemma)).to.not.include("că");
 			});
-      
+
 			it("use pre-reform orthography", async () => {
 				const results = await Dexonline.get("și", { flags: DictionaryFlags.UsePreReformOrthography });
 

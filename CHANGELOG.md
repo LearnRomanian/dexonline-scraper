@@ -1,3 +1,7 @@
+## 0.2.3
+
+- Fixed the package no longer reading text off of the website due to an HTML change.
+
 ## 0.2.2
 
 - Bumped dependencies to address security risks.

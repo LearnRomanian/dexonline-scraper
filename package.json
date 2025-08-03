@@ -1,57 +1,57 @@
 {
-	"name": "dexonline-scraper",
-	"description": "A tiny, battle-tested, performant and documented scraper for dexonline.ro.",
-	"license": "MIT",
-	"version": "0.2.2",
-	"type": "module",
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"keywords": [
-		"javascript",
-		"typescript",
-		"parser",
-		"scraper",
-		"dexonline",
-		"romanian",
-		"definitions",
-		"words",
-		"language",
-		"dictionary"
-	],
-	"homepage": "https://github.com/vxern/dexonline-scraper",
-	"bugs": {
-		"url": "https://github.com/vxern/dexonline-scraper/issues",
-		"email": "contact@wordcollector.co.uk"
-	},
-	"contributors": [
-		{
-			"name": "Dorian \"vxern\" Oszczęda",
-			"email": "vxern@wordcollector.co.uk",
-			"url": "https://github.com/vxern"
-		}
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/vxern/dexonline-scraper"
-	},
-	"scripts": {
-		"setup": "npm install && npm audit fix",
-		"format": "biome check src/ --apply-unsafe --organize-imports-enabled true",
-		"build": "tsc",
-		"test": "mocha --no-warnings",
+  "name": "dexonline-scraper",
+  "description": "A tiny, battle-tested, performant and documented scraper for dexonline.ro.",
+  "license": "MIT",
+  "version": "0.2.3",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "parser",
+    "scraper",
+    "dexonline",
+    "romanian",
+    "definitions",
+    "words",
+    "language",
+    "dictionary"
+  ],
+  "homepage": "https://github.com/vxern/dexonline-scraper",
+  "bugs": {
+    "url": "https://github.com/vxern/dexonline-scraper/issues",
+    "email": "contact@wordcollector.co.uk"
+  },
+  "contributors": [
+    {
+      "name": "Dorian \"vxern\" Oszczęda",
+      "email": "vxern@wordcollector.co.uk",
+      "url": "https://github.com/vxern"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vxern/dexonline-scraper"
+  },
+  "scripts": {
+    "setup": "npm install && npm audit fix",
+    "format": "biome check src/ --apply-unsafe --organize-imports-enabled true",
+    "build": "tsc",
+    "test": "mocha --no-warnings",
     "prepublishOnly": "npm test && npm run build && jsr publish"
-	},
-	"dependencies": {
-		"cheerio": "1.0.0-rc.12"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.5.3",
-		"@types/chai": "^4.3.12",
-		"@types/mocha": "^10.0.6",
-		"@types/node": "^20.11.24",
-		"chai": "^5.1.0",
-		"mocha": "^10.3.0",
-		"ts-node": "^10.9.2",
-		"typescript": "^5.3.3"
-	}
+  },
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "@types/chai": "^4.3.12",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.24",
+    "chai": "^5.1.0",
+    "mocha": "^10.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
 }
